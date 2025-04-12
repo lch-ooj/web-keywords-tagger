@@ -1,0 +1,29 @@
+{
+    "manifest_version":3,
+    "name":"关键词标记",
+    "version":"1.0",
+    "description":"在网页中标记用户设置的关键词，并弹窗提示",
+    "icons": {
+        "16": "image/icon16.gif",
+        "32": "image/icon32.gif",
+        "48": "image/icon48.gif",
+        "128": "image/icon128.gif"
+    },
+    "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+    "permissions": [ 
+        "storage",
+        "contextMenus",
+        "cookies",
+        "scripting"
+    ],
+    "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+    
+}

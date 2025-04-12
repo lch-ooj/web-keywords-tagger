@@ -93,8 +93,7 @@ function mainFunction() {
     });
   }
 
-
-//弹窗提示
+  //创建弹窗
   function createWarningBox(keyword) {
     // 为每个关键词生成唯一的提示框 ID
     const warningBoxId = `warning-box-${keyword}`;

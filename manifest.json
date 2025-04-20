@@ -19,9 +19,9 @@
         "cookies",
         "scripting"
     ],
-    "content_scripts": [
+    "background_scripts": [
     {
-      "js": ["scripts/content.js"],
+      "js": ["scripts/background.js"],
       "matches": ["<all_urls>"]
     }
   ]

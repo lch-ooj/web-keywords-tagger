@@ -19,7 +19,7 @@
         "cookies",
         "scripting"
     ],
-    "background_scripts": [
+    "content_scripts": [
     {
       "js": ["scripts/background.js"],
       "matches": ["<all_urls>"]
